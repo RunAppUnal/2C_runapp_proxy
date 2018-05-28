@@ -1,4 +1,4 @@
-FROM marvambass/nginx-ssl-secure
+FROM jwilder/nginx-proxy
 
 RUN apt-get update -qq && apt-get -y install apache2-utils
 ENV NODE_ROOT /var/www/api-gateway
